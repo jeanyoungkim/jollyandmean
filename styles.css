@@ -1,7 +1,95 @@
+@font-face {
+  font-family: "Antic";
+  src: url("./fonts/Antic_Didone/AnticDidone-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Bodoni";
+  src: url("./fonts/Bodoni_Moda/BodoniModa.ttf") format("truetype");
+}
+
+:root {
+  --white: #fbfbfb;
+  --beige: #d0a169;
+  --light-orange: #d7be82;
+  --orange: #c79346;
+  --burnt-orange: #a44a01;
+  --light-sage: #b1b7a2;
+  --sage: #979d80;
+  --dark-green: #335337;
+  --green-black: #1e3621;
+}
+
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: var(--green-black);
+  background-color: var(--white);
+  /* background-color: var(--sage); */
+}
+
+.antic {
+  font-family: "Antic", serif;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* 
+.title {
+  position: relative;
+  color: transparent;
+}
+
+.title:hover {
+  cursor: pointer;
+}
+
+.title::before,
+.title::after {
+  position: absolute;
+  left: 0;
+  color: var(--dark-green);
+  transition: 500ms ease;
+}
+
+.title:hover::before,
+.title::after {
+  opacity: 0;
+  transition: 500ms ease;
+}
+
+.title::after {
+  content: "Jolly & Mean";
+  color: var(--orange);
+}
+
+.title::before {
+  content: "Molly & Jean";
+  opacity: 1;
+}
+
+.title:hover::after {
+  opacity: 1;
+  transition: 500ms ease;
+} */
+
+/* h1,
+h2,
+h3 {
+  font-family: "Antic", serif;
+} */
+
+h1 {
+  font-size: 4rem;
+  color: var(--dark-green);
 }
