@@ -1,111 +1,92 @@
 @font-face {
-  font-family: "Antic";
-  src: url("./fonts/Antic_Didone/AnticDidone-Regular.ttf") format("truetype");
+	font-family: "Antic";
+	src: url("./fonts/Antic_Didone/AnticDidone-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Bodoni";
-  src: url("./fonts/Bodoni_Moda/BodoniModa.ttf") format("truetype");
+	font-family: "Montserrat";
+	src: url("./fonts/Montserrat/Montserrat-VariableFont_wght.ttf")
+		format("truetype");
+}
+
+@font-face {
+	font-family: "RedHat-Light";
+	src: url("./fonts/RedHat/RedHatDisplay-Light.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "RedHat-Medium";
+	src: url("./fonts/RedHat/RedHatDisplay-Medium.ttf") format("truetype");
 }
 
 :root {
-  --white: #fbfbfb;
-  --beige: #d0a169;
-  --light-orange: #d7be82;
-  --orange: #c79346;
-  --burnt-orange: #a44a01;
-  --light-sage: #b1b7a2;
-  --sage: #979d80;
-  --dark-green: #335337;
-  --green-black: #1e3621;
+	--white: #fbfbfb;
+	--beige: #d0a169;
+	--light-orange: #d7be82;
+	--orange: #c79346;
+	--burnt-orange: #a44a01;
+	--light-sage: #b1b7a2;
+	--sage: #979d80;
+	--dark-green: #335337;
+	--green-black: #1e3621;
 }
 
 body {
-  font-family: "Lato", Helvetica, Arial, sans-serif;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: var(--green-black);
-  background-color: var(--white);
-  position: relative;
+	font-family: "RedHat-Light", sans-serif;
+	color: var(--dark-green);
+	font-weight: 300;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: var(--green-black);
+	background-color: var(--white);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
 }
 
 body::after {
-  content: "";
-  background: url("./static/icon-pattern-2.svg");
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  opacity: 0.2;
-  /* background-size: 30%; */
-  z-index: -1;
+	content: "";
+	background: url("./static/icon-pattern.svg");
+	background-size: 20rem;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	opacity: 0.15;
+	z-index: -1;
 }
 
-.antic {
-  font-family: "Antic", serif;
+h1,
+h2 {
+	color: var(--dark-green);
+	background-color: var(--white);
+	text-transform: uppercase;
+	letter-spacing: 10px;
 }
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-/* .title {
-  position: relative;
-  color: transparent;
-}
-
-.title:hover {
-  cursor: pointer;
-}
-
-.title::before,
-.title::after {
-  position: absolute;
-  left: 0;
-  color: var(--dark-green);
-  transition: 500ms ease;
-}
-
-.title:hover::before,
-.title::after {
-  opacity: 0;
-  transition: 500ms ease;
-}
-
-.title::after {
-  width: 100%;
-  text-align: center;
-  content: "Oct ? 202?";
-  color: var(--orange);
-}
-
-.title::before {
-  content: "Molly & Jean";
-  opacity: 1;
-}
-
-.title:hover::after {
-  opacity: 1;
-  transition: 500ms ease;
-} */
-
-/* h1,
-h2,
-h3 {
-  font-family: "Antic", serif;
-} */
 
 h1 {
-  font-size: 4rem;
-  color: var(--dark-green);
-  background-color: var(--white);
+	font-size: 1.5rem;
+	margin-bottom: 8px;
+}
+
+h2 {
+	margin-bottom: 0px;
+	margin-top: 8px;
+	font-size: 0.75rem;
+	letter-spacing: 6px;
+}
+
+@media (min-width: 1024px) {
+	h1 {
+		font-size: 2rem;
+	}
+
+	h2 {
+		font-size: 1rem;
+	}
 }
