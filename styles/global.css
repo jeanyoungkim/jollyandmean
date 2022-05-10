@@ -1,16 +1,16 @@
 @font-face {
 	font-family: "Antic";
-	src: url("./fonts/Antic_Didone/AnticDidone-Regular.ttf") format("truetype");
+	src: url("../fonts/Antic_Didone/AnticDidone-Regular.ttf") format("truetype");
 }
 
 @font-face {
 	font-family: "RedHat-Light";
-	src: url("./fonts/RedHat/RedHatDisplay-Light.ttf") format("truetype");
+	src: url("../fonts/RedHat/RedHatDisplay-Light.ttf") format("truetype");
 }
 
 @font-face {
 	font-family: "RedHat-Medium";
-	src: url("./fonts/RedHat/RedHatDisplay-Medium.ttf") format("truetype");
+	src: url("../fonts/RedHat/RedHatDisplay-Medium.ttf") format("truetype");
 }
 
 * {
@@ -46,7 +46,7 @@ body {
 
 body::before {
 	content: "";
-	background: url("./static/icon-pattern.svg");
+	background: url("../static/icon-pattern.svg");
 	background-size: 10rem;
 	position: absolute;
 	width: 100%;
