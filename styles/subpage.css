@@ -12,6 +12,7 @@ header {
 	background-color: white;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	width: 100%;
 	color: var(--dark-green);
 	background-color: var(--dark-green);
@@ -28,7 +29,7 @@ header h1 {
 }
 
 a {
-	color: #000;
+	color: var(--dark-green);
 }
 
 h1 {
@@ -59,7 +60,9 @@ li {
 
 @media (min-width: 1024px) {
 	main {
-		max-width: 700px;
+		padding: 0;
+		max-width: 600px;
 		padding-bottom: 8rem;
+		margin: 1rem 2rem 2rem 2rem;
 	}
 }

@@ -7,12 +7,27 @@
 		<title>Molly & Jean | Things to do</title>
 		<link rel="stylesheet" href="../styles/global.css" />
 		<link rel="stylesheet" href="../styles/subpage.css" />
+		<link rel="stylesheet" href="../styles/nav.css" />
 		<link rel="shortcut icon" href="../favicon.ico" />
 	</head>
 	<body>
+		<nav class="main-nav">
+			<div class="close-button">&#10005;</div>
+			<div class="nav-links">
+				<a href="/"><h2>Home</h2></a>
+				<a
+					><h2>The gay agenda <br />(our schedule)</h2></a
+				>
+				<a><h2>Where to stay</h2></a>
+				<a><h2>How to get here</h2></a>
+				<a href="/things-to-do"><h2>Things to do</h2></a>
+				<a><h2>A letter from Lupini</h2></a>
+				<a><h2>Registry</h2></a>
+			</div>
+		</nav>
 		<header>
-			<img src="../static/images/lupini.png" width="30px" />
-			<button>[]</button>
+			<a href="/"><img src="../static/images/lupini.png" width="30px" /></a>
+			<div class="hamburger">&#9776;</div>
 		</header>
 		<main>
 			<img class="hero-image" src="../static/images/pool.jpg" width="100%" />
@@ -78,4 +93,5 @@
 		</main>
 		<footer>© Copyright 2022 Lupini Bean LLC</footer>
 	</body>
+	<script src="../main.js"></script>
 </html>
