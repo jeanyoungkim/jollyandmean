@@ -1,0 +1,65 @@
+body {
+	padding: 0;
+}
+
+body::after {
+	height: 30vh;
+}
+
+header {
+	position: sticky;
+	top: 0;
+	background-color: white;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	color: var(--dark-green);
+	background-color: var(--dark-green);
+	padding: 1rem 2rem;
+}
+
+header h1 {
+	font-size: 1.5rem;
+}
+
+.hero-image {
+	max-width: 600px;
+	margin: 0 auto 24px auto;
+}
+
+a {
+	color: #000;
+}
+
+h1 {
+	font-size: 1.2rem;
+}
+
+h2 {
+	font-family: "RedHat-Medium";
+}
+
+main {
+	padding: 1rem 2rem 2rem 2rem;
+	width: 100%;
+}
+
+.list-heading {
+	margin-top: 36px;
+	margin-bottom: 16px;
+}
+
+ul {
+	margin: 16px 0;
+}
+
+li {
+	margin: 8px 0;
+}
+
+@media (min-width: 1024px) {
+	main {
+		max-width: 700px;
+		padding-bottom: 8rem;
+	}
+}
