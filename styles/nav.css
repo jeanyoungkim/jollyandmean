@@ -25,10 +25,6 @@
 	font-size: 1.4rem;
 }
 
-.main-nav.open {
-	transform: translateY(100vh);
-}
-
 .disable-scroll {
 	overflow: hidden;
 }

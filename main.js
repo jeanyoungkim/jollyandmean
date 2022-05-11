@@ -14,19 +14,20 @@ const toggleScroll = () => {
 };
 
 const toggleOpenState = () => {
-	console.log("wut", isOpen, nav.classList);
-	isOpen ? nav.classList.remove("open") : nav.classList.add("open");
+	const scrollOffset = window.scrollY;
+
+	nav.style.transform = isOpen
+		? `translateY(0)`
+		: `translateY(calc(100vh + ${scrollOffset}px))`;
 };
 
 const toggleNav = () => {
-	console.log("toggle", isOpen);
 	toggleScroll();
 	toggleOpenState();
 	setIsOpen(!isOpen);
 };
 
 const init = () => {
-	console.log("hi");
 	hamburger.addEventListener("click", toggleNav);
 	closeButton.addEventListener("click", toggleNav);
 };
