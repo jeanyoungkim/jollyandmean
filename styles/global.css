@@ -1,0 +1,146 @@
+@font-face {
+	font-family: "Antic";
+	src: url("../fonts/Antic_Didone/AnticDidone-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "RedHat-Light";
+	src: url("../fonts/RedHat/RedHatDisplay-Light.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "RedHat-Medium";
+	src: url("../fonts/RedHat/RedHatDisplay-Medium.ttf") format("truetype");
+}
+
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--white: #fbfbfb;
+	--beige: #d0a169;
+	--light-orange: #d7be82;
+	--orange: #c79346;
+	--burnt-orange: #a44a01;
+	--light-sage: #b1b7a2;
+	--sage: #979d80;
+	--dark-green: #335337;
+	--green-black: #1e3621;
+}
+
+body {
+	font-family: "RedHat-Light", sans-serif;
+	color: var(--dark-green);
+	font-weight: 300;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	color: var(--green-black);
+	background-color: var(--white);
+	margin: 0;
+	padding: 0 2.5rem;
+	position: relative;
+}
+
+body::before {
+	content: "";
+	background: url("../static/icon-pattern.svg");
+	background-size: 10rem;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0.1;
+	z-index: -1;
+}
+
+header {
+	position: relative;
+	color: var(--white);
+	z-index: 1;
+	width: 100%;
+}
+
+header > a {
+	display: flex;
+	margin: 0;
+}
+
+nav a {
+	display: inline-block;
+	text-decoration: underline;
+	text-underline-offset: 3px;
+	margin-bottom: 16px;
+	line-height: 1.5;
+	color: var(--green-black);
+}
+
+nav {
+	font-family: "RedHat-Medium";
+	text-align: right;
+	width: 100%;
+}
+
+h1,
+h2 {
+	text-transform: uppercase;
+	letter-spacing: 10px;
+}
+
+h1 {
+	font-size: 1.5rem;
+	margin-bottom: 8px;
+}
+
+h2 {
+	margin-bottom: 0px;
+	margin-top: 8px;
+	font-size: 0.75rem;
+	letter-spacing: 5px;
+}
+
+footer {
+	padding: 2rem;
+	background-color: white;
+	width: 100%;
+	font-size: 0.8rem;
+	text-align: center;
+}
+
+body::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 45vh;
+	top: 0;
+	background: var(--dark-green);
+	z-index: -2;
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+@media (min-width: 1024px) {
+	body::before {
+		background-size: 15rem;
+	}
+
+	nav {
+		display: flex;
+		flex-direction: column;
+		text-align: left;
+		padding: 0 3rem;
+	}
+
+	h1 {
+		font-size: 2rem;
+	}
+
+	h2 {
+		font-size: 1rem;
+	}
+
+	a {
+		margin-bottom: 26px;
+	}
+}

@@ -1,0 +1,56 @@
+.main-nav {
+	height: 100vh;
+	background-color: var(--dark-green);
+	color: white;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 2rem;
+	transition: 400ms ease-in-out;
+	top: -100vh;
+	position: absolute;
+	z-index: 2;
+}
+
+.main-nav a {
+	color: white;
+}
+
+.hamburger {
+	color: white;
+	font-size: 1.8rem;
+}
+
+.close-button {
+	font-size: 1.4rem;
+}
+
+.main-nav.open {
+	transform: translateY(100vh);
+}
+
+.disable-scroll {
+	overflow: hidden;
+}
+
+.nav-links {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+@media (min-width: 1024px) {
+	.main-nav {
+		justify-content: flex-end;
+		text-align: right;
+	}
+
+	.nav-links {
+		text-align: center;
+	}
+	.hamburger:hover,
+	.close-button:hover {
+		cursor: pointer;
+	}
+}
