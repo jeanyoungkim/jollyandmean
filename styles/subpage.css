@@ -25,7 +25,7 @@ header h1 {
 
 .hero-image {
 	max-width: 600px;
-	margin: 0 auto 24px auto;
+	margin: 0 auto 36px auto;
 }
 
 a {
@@ -56,6 +56,22 @@ ul {
 
 li {
 	margin: 8px 0;
+}
+
+.schedule-item {
+	margin-bottom: 36px;
+}
+
+.schedule-item h1 {
+	margin-bottom: 24px;
+}
+
+.schedule-item h2 {
+	margin-bottom: 8px;
+}
+
+.schedule-item p {
+	margin: 4px auto;
 }
 
 @media (min-width: 1024px) {
