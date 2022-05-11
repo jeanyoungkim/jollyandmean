@@ -59,7 +59,7 @@ li {
 }
 
 .schedule-item {
-	margin-bottom: 36px;
+	margin-bottom: 42px;
 }
 
 .schedule-item h1 {
@@ -72,6 +72,19 @@ li {
 
 .schedule-item p {
 	margin: 4px auto;
+}
+
+.event {
+	display: flex;
+	align-items: center;
+}
+
+.icon {
+	width: 30px;
+}
+
+.description {
+	margin-left: 24px;
 }
 
 @media (min-width: 1024px) {
