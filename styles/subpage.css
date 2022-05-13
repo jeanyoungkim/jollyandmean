@@ -87,6 +87,10 @@ li {
 	margin-left: 24px;
 }
 
+#lupinis-blog p {
+	margin: 0.5rem 0;
+}
+
 @media (min-width: 1024px) {
 	main {
 		padding: 0;
