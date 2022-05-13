@@ -80,7 +80,8 @@ li {
 }
 
 .icon {
-	width: 30px;
+	width: 60px;
+	opacity: 0.9;
 }
 
 .description {
