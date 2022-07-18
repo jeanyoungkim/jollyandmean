@@ -13,6 +13,16 @@
 	src: url("../fonts/RedHat/RedHatDisplay-Medium.ttf") format("truetype");
 }
 
+@font-face {
+	font-family: "Camila";
+	src: url("../fonts/Camila/camila-medium.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "MrsEavesRoman";
+	src: url("../fonts/Eaves/mrs-eaves-roman.ttf") format("truetype");
+}
+
 * {
 	box-sizing: border-box;
 }
