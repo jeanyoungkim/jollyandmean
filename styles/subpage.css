@@ -3,7 +3,7 @@ body {
 }
 
 body::after {
-	height: 30vh;
+	height: 40vh;
 }
 
 header {
@@ -34,10 +34,6 @@ a {
 
 h1 {
 	font-size: 1.2rem;
-}
-
-h2 {
-	font-family: "RedHat-Medium";
 }
 
 main {
@@ -98,5 +94,9 @@ li {
 		max-width: 600px;
 		padding-bottom: 8rem;
 		margin: 1rem 2rem 2rem 2rem;
+	}
+
+	h1 {
+		font-size: 1.4rem;
 	}
 }
