@@ -55,11 +55,12 @@ li {
 }
 
 .schedule-item {
+	text-align: center;
 	margin-bottom: 42px;
 }
 
-.schedule-item h1 {
-	margin-bottom: 24px;
+.schedule-item .header {
+	margin-bottom: 50px;
 }
 
 .schedule-item h2 {
@@ -72,16 +73,35 @@ li {
 
 .event {
 	display: flex;
+	flex-direction: column;
 	align-items: center;
+	justify-content: center;
+	background-color: white;
+	border: 1px solid #e9e9e9;
+	padding: 3rem 2rem 2rem 2rem;
+	position: relative;
+	margin-top: 40px;
+	text-align: center;
+}
+
+.event hr {
+	width: 8px;
+	margin: 12px auto;
+	border: none;
+	height: 1px;
+	background-color: var(--dark-green);
 }
 
 .icon {
+	position: absolute;
+	top: -30px;
 	width: 60px;
 	opacity: 0.9;
+	left: calc(50% - 30px);
 }
 
-.description {
-	margin-left: 24px;
+.small {
+	font-size: 0.85rem;
 }
 
 #lupinis-blog p {
