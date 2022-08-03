@@ -6,18 +6,6 @@ body {
 	left: 0;
 }
 
-body::after {
-	content: "";
-	position: absolute;
-	width: 100%;
-	height: 45vh;
-	top: 0;
-	background: var(--dark-green);
-	z-index: -2;
-	-webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-	clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-}
-
 @media (min-width: 1024px) {
 	body {
 		flex-direction: row;
