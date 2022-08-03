@@ -9,11 +9,6 @@
 }
 
 @font-face {
-	font-family: "Camila";
-	src: url("../fonts/Camila/camila-medium.ttf") format("truetype");
-}
-
-@font-face {
 	font-family: "MrsEavesRoman";
 	src: url("../fonts/Eaves/eaves.ttf") format("truetype");
 }
